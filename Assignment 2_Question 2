@@ -1,0 +1,47 @@
+You are given a sorted(either in the increasing or in the decreasing order) sequence of positive numbers, ending with a -1. You can assume that there are atleast three numbers before the ending -1. 
+
+Note : -1 is not a part of input. It only signifies that input has ended.
+
+Let us call the sequence x0  x1 ... xn -1.
+
+You have to output 1 if there are atleast three distinct numbers in the sequence.
+otherwise output 0
+
+Kindly do not use arrays in the code.
+
+//anwser
+#include<stdio.h>
+
+int main()
+{
+ int a,b;
+ int c=1;
+ scanf("%d",&a);
+   for(;;)
+   {
+       
+       scanf("%d",&b);
+       if(b==-1)
+       {
+           printf("0");
+           break;
+       }
+       
+       if(a!=b)
+       {
+         a=b;
+         c = c+1; 
+         if(c==3)
+         {
+             printf("1");
+             break;
+         }
+           
+       }
+       
+       
+       
+   }
+
+return 0;
+}
