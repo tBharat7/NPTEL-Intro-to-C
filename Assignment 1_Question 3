@@ -1,0 +1,20 @@
+Input : Triplet of three numbers (a,b,c)
+Output : 1 if they are either in strictly increasing (a>b>c) or decreasing (a<b<c) order
+              0, otherwise.
+
+/****************************************
+***************************************/
+#include <stdio.h>
+int main()
+
+{
+int a,b,c;
+scanf("%d %d %d", &a,&b, &c);
+if(((a>b) && (b>c))||((c>b) && (b>a)))
+ {
+   printf("1");
+  }
+else
+  printf("0");
+return 0;
+}
