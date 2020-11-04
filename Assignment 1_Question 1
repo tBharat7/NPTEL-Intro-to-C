@@ -1,0 +1,39 @@
+You will be given 3 integers as input. The inputs may or may not be
+ different from each other. 
+
+You have to output 1 if sum of first two inputs is greater than the third input, 
+and 0 otherwise
+
+Input
+-------------------------------------
+Three integers separated by space.
+
+Output
+----------------------------------
+1 if sum of first two inputs is greater than third input
+0 otherwise
+/*************************************************************************
+*************************************************************************/
+
+#include <stdio.h>
+ 
+int main()
+{
+    int a;
+    int b;
+    int c;
+ 
+ 
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+ 
+    if((a+b)>c)
+    {
+        printf("1\n");
+    }else{
+        printf("0\n");
+    }
+ 
+    return 0;
+}
